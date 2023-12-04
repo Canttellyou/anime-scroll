@@ -2,6 +2,6 @@
 import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 
-const MotionDiv = motion.div;
+const MotionDiv = motion.a;
 
 export default MotionDiv;

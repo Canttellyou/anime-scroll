@@ -11,6 +11,7 @@ export interface AnimeProp {
   episodes: number;
   episodes_aired: number;
   score: string;
+  url: string;
 }
 
 interface Prop {
@@ -36,6 +37,8 @@ function AnimeCard({ anime, index }: Prop) {
       }}
       viewport={{ amount: 0 }}
       className="max-w-sm rounded relative w-full"
+      href={`https://shikimori.one${anime.url}`}
+      target="blank"
     >
       <div className="relative w-full h-[37vh]">
         <Image
